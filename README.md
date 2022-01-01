@@ -18,9 +18,9 @@ public class finddigitnumber_recurive {
             return count(sayi / 10);
         }
     }
-}```
+}
 ### Girilen sayı dizisinin elamanlarını rekürsif şekilde toplamını bulan method;
-```java
+
 public class totalofarray_recursive {
 
     static int total = 0;
@@ -39,7 +39,7 @@ public class totalofarray_recursive {
             return sum(array, indis + 1);
         }
     }
-}```
+}
 
 
 
