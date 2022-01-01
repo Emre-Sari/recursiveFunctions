@@ -18,4 +18,29 @@ public class finddigitnumber_recurive {
             return count(sayi / 10);
         }
     }
-}
+}```
+### Girilen sayı dizisinin elamanlarını rekürsif şekilde toplamını bulan method;
+```java
+public class totalofarray_recursive {
+
+    static int total = 0;
+
+    public static void main(String[] args) {
+        int array[] = {3, 7, 1, -43, 54};
+        int result = sum(array, 0);
+        System.out.println(result);
+    }
+
+    public static int sum(int[] array, int indis) {
+        if (indis == array.length) {
+            return total;
+        } else {
+            total += array[indis];
+            return sum(array, indis + 1);
+        }
+    }
+}```
+
+
+
+
