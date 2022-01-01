@@ -64,7 +64,7 @@ public class fibonacci_recursive {
     }
 }
 ```
-### girilen Stringi tersten rekürsif şekilde yazan method;
+### Girilen Stringi tersten rekürsif şekilde yazan method;
 ```java
 public class writeinreverse_recursive {
 
