@@ -1,5 +1,6 @@
 # recursiveFunctions
 recursive function solutions in java
+### The method that finds how many digits the entered number has recursively;
 ### Girilen sayının kaç basamaklı olduğunu rekürsif şekilde bulan method;
 ```java
 public class finddigitnumber_recurive {
@@ -20,6 +21,7 @@ public class finddigitnumber_recurive {
     }
 }
 ```
+### The method that finds the recursive sum of the elements of the entered number sequence;
 ### Girilen sayı dizisinin elamanlarını rekürsif şekilde toplamını bulan method;
 ```java
 public class totalofarray_recursive {
@@ -42,6 +44,7 @@ public class totalofarray_recursive {
     }
 }
 ```
+### The method that finds the Fibonacci number in the entered number value recursively;
 ### Girilen sayı değerindeki fibonacci sayısını rekürsif şekilde bulan method;
 ```java
 public class fibonacci_recursive {
@@ -64,6 +67,7 @@ public class fibonacci_recursive {
     }
 }
 ```
+### The method that writes the entered string in reverse recursive way;
 ### Girilen Stringi tersten rekürsif şekilde yazan method;
 ```java
 public class writeinreverse_recursive {
@@ -85,6 +89,7 @@ public class writeinreverse_recursive {
     }
 }
 ```
+### Recursive method that finds how many 'a' and 'A' characters are in the entered String;
 ### Girilen String içinde kaç adet 'a' ve 'A' karakteri olduğunu rekürsif şekilde bulan method;
 ```java
 public class howmanythereisA_recursive {
@@ -108,6 +113,38 @@ public class howmanythereisA_recursive {
         }
     }
 }
+```
+### The method that recursively finds the largest integer in the entered array;
+### Girilen dizideki en büyük tamsayıyı rekürsif şekilde bulan method; 
+```java
+public static void main(String[] args) {
+        int array[] = {3, -44, 22, 4, 33, -5, 77};
+        System.out.println(find(array[0], 0, array));
+    }
+    public static int find(int enb, int indis, int[] array) {
+        if (indis == array.length) {
+            return enb;
+        } else {
+            if (enb < array[indis]) {
+                enb = array[indis];
+                return find(enb, indis + 1, array);
+            }
+            return find(enb, indis + 1, array);
+        }
+    }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
